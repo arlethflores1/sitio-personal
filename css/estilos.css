@@ -1,0 +1,433 @@
+/* ================================= */
+/* ESTILOS GENERALES */
+/* ================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================================= */
+/* ENCABEZADO Y MENU */
+/* ================================= */
+
+.encabezado {
+    width: 100%;
+    min-height: 95px;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    border-bottom: 1px solid #66552e;
+}
+
+.logo {
+    color: #DFB96A;
+    font-family: cursive;
+    font-size: 36px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: #DFB96A;
+}
+
+
+/* ================================= */
+/* PORTADA / INICIO */
+/* ================================= */
+
+.portada {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.70),
+            rgba(0, 0, 0, 0.70)
+        ),
+        url("../Img/Portada\ Principal.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.portada-contenido {
+    max-width: 650px;
+}
+
+.portada-etiqueta {
+    color: #DFB96A;
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.portada h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.portada h2 {
+    color: #DFB96A;
+    font-family: cursive;
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.portada h3 {
+    color: white;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.portada-descripcion {
+    color: #eeeeee;
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 570px;
+    margin-bottom: 30px;
+}
+
+.boton-portada {
+    display: inline-block;
+    background-color: #DFB96A;
+    color: #111111;
+    text-decoration: none;
+    padding: 16px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.boton-portada:hover {
+    background-color: white;
+}
+
+
+/* ================================= */
+/* ESTILOS DE LAS SECCIONES */
+/* ================================= */
+
+.seccion {
+    padding: 85px 7%;
+    margin: 35px auto;
+}
+
+
+/* ================================= */
+/* SECCION 1: SOBRE MI */
+/* ================================= */
+
+.sobre-mi {
+    background-color: #eeeeee;
+    color: #222222;
+}
+
+.sobre-mi-contenedor {
+    max-width: 1150px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.sobre-mi-informacion {
+    flex: 2;
+}
+
+.etiqueta {
+    color: #777777;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.sobre-mi-informacion h2 {
+    font-size: 32px;
+    color: #222222;
+}
+
+.linea-dorada {
+    width: 45px;
+    height: 3px;
+    background-color: #DFB96A;
+    margin: 20px 0 35px;
+}
+
+
+/* TRES COLUMNAS */
+
+.sobre-mi-columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.sobre-mi-item {
+    text-align: left;
+}
+
+.emoji {
+    display: block;
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.sobre-mi-item h3 {
+    color: #333333;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.sobre-mi-item p {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* FOTOGRAFIA */
+
+.sobre-mi-foto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-mi-foto img {
+    width: 100%;
+    max-width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+/* ================================= */
+/* SECCION 2: FORMACION */
+/* ================================= */
+
+.formacion {
+    background-color: #eeeeee;
+    color: #222222;
+}
+
+.formacion-contenedor {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 480px;
+}
+
+
+/* INFORMACION IZQUIERDA */
+
+.formacion-informacion {
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+.formacion-etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.formacion-etiquetas span {
+    color: #777777;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+/* APARTADOS VERTICALES */
+
+.formacion-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.emoji-formacion {
+    font-size: 29px;
+}
+
+.formacion-item h3 {
+    color: #222222;
+    font-size: 16px;
+    margin: 5px 0 10px;
+}
+
+.formacion-item p {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* IMAGEN DERECHA */
+
+.formacion-imagen {
+    position: relative;
+    min-height: 480px;
+    overflow: hidden;
+}
+
+.formacion-imagen img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+
+/* OSCURECER LA IMAGEN */
+
+.formacion-imagen::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+
+/* TEXTO ENCIMA DE LA IMAGEN */
+
+.formacion-texto {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.formacion-texto p {
+    color: #DFB96A;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.formacion-texto h2 {
+    color: white;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.formacion-texto span {
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ================================= */
+/* PIE DE PAGINA */
+/* ================================= */
+
+.pie-pagina {
+    background-color: #111111;
+    color: #cccccc;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+
+/* ================================= */
+/* DISEÑO PARA CELULARES */
+/* ================================= */
+
+@media screen and (max-width: 768px) {
+
+    .encabezado {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .portada {
+        min-height: 550px;
+        padding: 50px 7%;
+    }
+
+    .portada h1 {
+        font-size: 35px;
+    }
+
+    .portada h2 {
+        font-size: 40px;
+    }
+
+    .sobre-mi-contenedor {
+        flex-direction: column;
+    }
+
+    .sobre-mi-columnas {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .sobre-mi-foto img {
+        max-width: 260px;
+    }
+
+    .formacion-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .formacion-informacion {
+        padding: 25px;
+    }
+
+    .formacion-imagen {
+        min-height: 350px;
+    }
+
+}
